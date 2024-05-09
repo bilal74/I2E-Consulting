@@ -7,6 +7,7 @@
   </div>
   <div class="nav-links">
     
+      <!-- Industries start -->
       <button mat-button [matMenuTriggerFor]="Industries_menu"> 
         Industries
       </button> 
@@ -16,54 +17,55 @@
         <mat-menu #LifeScience_menu="matMenu"> 
           <button mat-menu-item [matMenuTriggerFor]="Portfolio_menu">Portfolio Strategy</button>
             <mat-menu #Portfolio_menu="matMenu"> 
-              <button mat-menu-item>PPM Consulting</button>
-              <button mat-menu-item>Portfolio Analytics</button>
+              <button mat-menu-item routerLink="industries/life-science/portfolio-strategy/ppm-consulting">PPM Consulting</button>
+              <button mat-menu-item routerLink="industries/life-science/portfolio-strategy/portfolio-analytics">Portfolio Analytics</button>
             </mat-menu> 
           <button mat-menu-item [matMenuTriggerFor]="RandD_menu">R&D</button>
           <mat-menu #RandD_menu="matMenu"> 
-            <button mat-menu-item>Drug Discovery</button>
-            <button mat-menu-item>Clinical Data Management</button>
-            <button mat-menu-item>Business Research</button>
-            <button mat-menu-item>Business Development and Licensing</button>
-            <button mat-menu-item>Medical Affairs</button>
-            <button mat-menu-item>Pharmacovigilance</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/drug-discovery">Drug Discovery</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/clinical-data-management">Clinical Data Management</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/business-research">Business Research</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/business-development-licensing">Business Development and Licensing</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/medical-affairs">Medical Affairs</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/pharmacovigilance">Pharmacovigilance</button>
           </mat-menu> 
           <button mat-menu-item [matMenuTriggerFor]="Manufacturing_menu">Manufacturing</button>
           <mat-menu #Manufacturing_menu="matMenu"> 
-            <button mat-menu-item>Global Clinical Ops</button>
-            <button mat-menu-item>Supply Chain transformation </button>
-            <button mat-menu-item>Inventory Optimization</button>
+            <button mat-menu-item routerLink="industries/life-science/manufacturing/global-clinical-ops">Global Clinical Ops</button>
+            <button mat-menu-item routerLink="industries/life-science/manufacturing/supply-chain-transformation">Supply Chain transformation </button>
+            <button mat-menu-item routerLink="industries/life-science/manufacturing/inventory-optimization">Inventory Optimization</button>
           </mat-menu> 
           <button mat-menu-item [matMenuTriggerFor]="Launch_menu">Launch & Commercialization</button>
           <mat-menu #Launch_menu="matMenu"> 
-            <button mat-menu-item>Launch Readiness</button>
-            <button mat-menu-item>Commercial Analytics </button>
-            <button mat-menu-item>Forecasting</button>
-            <button mat-menu-item>Marketing and Digital Services</button>
-            <button mat-menu-item>Sales Analytics</button>
+            <button mat-menu-item routerLink="industries/life-science/launch&commercialization/launch-readiness">Launch Readiness</button>
+            <button mat-menu-item routerLink="industries/life-science/launch&commercialization/commercial-analytics">Commercial Analytics </button>
+            <button mat-menu-item routerLink="industries/life-science/launch&commercialization/forecasting">Forecasting</button>
+            <button mat-menu-item routerLink="industries/life-science/launch&commercialization/marketing&digital-service">Marketing and Digital Services</button>
+            <button mat-menu-item routerLink="industries/life-science/launch&commercialization/sales-analytics">Sales Analytics</button>
           </mat-menu>
         </mat-menu> 
         <button mat-menu-item [matMenuTriggerFor]="BioTech_menu">BioTech</button> 
         <mat-menu #BioTech_menu="matMenu"> 
         <button mat-menu-item [matMenuTriggerFor]="PortfolioB_menu">Portfolio Strategy</button>
             <mat-menu #PortfolioB_menu="matMenu"> 
-              <button mat-menu-item>PPM Consulting</button>
-              <button mat-menu-item>Portfolio Analytics</button>
+              <button mat-menu-item routerLink="industries/bio-tech/portfolio-strategy/ppm-consulting">PPM Consulting</button>
+              <button mat-menu-item routerLink="industries/bio-tech/portfolio-strategy/portfolio-analytics">Portfolio Analytics</button>
             </mat-menu> 
           <button mat-menu-item [matMenuTriggerFor]="RandDB_menu">R&D</button>
           <mat-menu #RandDB_menu="matMenu"> 
-            <button mat-menu-item>Drug Discovery</button>
-            <button mat-menu-item>Clinical Data Management</button>
-            <button mat-menu-item>Business Research</button>
-            <button mat-menu-item>Business Development and Licensing</button>
-            <button mat-menu-item>Medical Affairs</button>
-            <button mat-menu-item>Pharmacovigilance</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/drug-discovery">Drug Discovery</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/clinical-data-management">Clinical Data Management</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/business-research">Business Research</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/business-development-licensing">Business Development and Licensing</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/medical-affairs">Medical Affairs</button>
+            <button mat-menu-item routerLink="industries/bio-tech/r&d/pharmacovigilance">Pharmacovigilance</button>
           </mat-menu> 
-          <button mat-menu-item>In licensing/Out licensing</button>
-          <button mat-menu-item>Business Research</button>
-          <button mat-menu-item>Pipeline Product Forecast</button>
+          <button mat-menu-item routerLink="industries/bio-tech/in-out-licensing">In licensing/Out licensing</button>
+          <button mat-menu-item routerLink="industries/bio-tech/business-research">Business Research</button>
+          <button mat-menu-item routerLink="industries/bio-tech/pipeline-product-forecast">Pipeline Product Forecast</button>
         </mat-menu> 
       </mat-menu> 
+      <!-- Industries end -->
 
       <!-- Solution start -->
       <button mat-button [matMenuTriggerFor]="Solution_menu"> 

@@ -33,6 +33,24 @@ import { PodcastWebinarsComponent } from './pages/resource-center/podcast-webina
 import { EventsNewsComponent } from './pages/resource-center/events-news/events-news.component';
 import { SuccessCaseStudiesComponent } from './pages/resource-center/customer-hub/success-case-studies/success-case-studies.component';
 import { TestimonialsComponent } from './pages/resource-center/customer-hub/testimonials/testimonials.component';
+import { InOutLicensingComponent } from './pages/industries/bio-tech/in-out-licensing/in-out-licensing.component';
+import { BusinessResearchComponent } from './pages/industries/bio-tech/business-research/business-research.component';
+import { PipelineProductForecastComponent } from './pages/industries/bio-tech/pipeline-product-forecast/pipeline-product-forecast.component';
+import { PpmConsultingComponent } from './pages/industries/bio-tech/portfolio-strategy/ppm-consulting/ppm-consulting.component';
+import { PortfolioAnalyticsComponent } from './pages/industries/bio-tech/portfolio-strategy/portfolio-analytics/portfolio-analytics.component';
+import { DrugDiscoveryComponent } from './pages/industries/bio-tech/r&d/drug-discovery/drug-discovery.component';
+import { ClinicalDataManagementComponent } from './pages/industries/bio-tech/r&d/clinical-data-management/clinical-data-management.component';
+import { BusinessDevelopmentComponent } from './pages/industries/bio-tech/r&d/business-development/business-development.component';
+import { MedicalAffairsComponent } from './pages/industries/bio-tech/r&d/medical-affairs/medical-affairs.component';
+import { PharmacovigilanceComponent } from './pages/industries/bio-tech/r&d/pharmacovigilance/pharmacovigilance.component';
+import { LaunchReadinessComponent } from './pages/industries/life-science/launch&commercialization/launch-readiness/launch-readiness.component';
+import { CommercialAnalyticsComponent } from './pages/industries/life-science/launch&commercialization/commercial-analytics/commercial-analytics.component';
+import { ForecastingComponent } from './pages/industries/life-science/launch&commercialization/forecasting/forecasting.component';
+import { SalesAnalyticsComponent } from './pages/industries/life-science/launch&commercialization/sales-analytics/sales-analytics.component';
+import { MarketingDigitalServicesComponent } from './pages/industries/life-science/launch&commercialization/marketing-digital-services/marketing-digital-services.component';
+import { GlobalClinicalOpsComponent } from './pages/industries/life-science/manufacturing/global-clinical-ops/global-clinical-ops.component';
+import { SupplyChainTransformationComponent } from './pages/industries/life-science/manufacturing/supply-chain-transformation/supply-chain-transformation.component';
+import { InventoryOptimizationComponent } from './pages/industries/life-science/manufacturing/inventory-optimization/inventory-optimization.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +77,25 @@ import { TestimonialsComponent } from './pages/resource-center/customer-hub/test
     PodcastWebinarsComponent,
     EventsNewsComponent,
     SuccessCaseStudiesComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    InOutLicensingComponent,
+    BusinessResearchComponent,
+    PipelineProductForecastComponent,
+    PpmConsultingComponent,
+    PortfolioAnalyticsComponent,
+    DrugDiscoveryComponent,
+    ClinicalDataManagementComponent,
+    BusinessDevelopmentComponent,
+    MedicalAffairsComponent,
+    PharmacovigilanceComponent,
+    LaunchReadinessComponent,
+    CommercialAnalyticsComponent,
+    ForecastingComponent,
+    SalesAnalyticsComponent,
+    MarketingDigitalServicesComponent,
+    GlobalClinicalOpsComponent,
+    SupplyChainTransformationComponent,
+    InventoryOptimizationComponent
   ],
   imports: [
     BrowserModule,
