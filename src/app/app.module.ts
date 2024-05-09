@@ -26,6 +26,13 @@ import { LeadershipComponent } from './pages/about-us/leadership/leadership.comp
 import { ComplianceComponent } from './pages/about-us/compliance/compliance.component';
 import { WorkComponent } from './pages/about-us/work/work.component';
 import { ContactUsComponent } from './pages/about-us/contact-us/contact-us.component';
+import { IndustryPrimersComponent } from './pages/resource-center/industry-primers/industry-primers.component';
+import { BlogComponent } from './pages/resource-center/blog/blog.component';
+import { AiLabComponent } from './pages/resource-center/ai-lab/ai-lab.component';
+import { PodcastWebinarsComponent } from './pages/resource-center/podcast-webinars/podcast-webinars.component';
+import { EventsNewsComponent } from './pages/resource-center/events-news/events-news.component';
+import { SuccessCaseStudiesComponent } from './pages/resource-center/customer-hub/success-case-studies/success-case-studies.component';
+import { TestimonialsComponent } from './pages/resource-center/customer-hub/testimonials/testimonials.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +52,14 @@ import { ContactUsComponent } from './pages/about-us/contact-us/contact-us.compo
     LeadershipComponent,
     ComplianceComponent,
     WorkComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    IndustryPrimersComponent,
+    BlogComponent,
+    AiLabComponent,
+    PodcastWebinarsComponent,
+    EventsNewsComponent,
+    SuccessCaseStudiesComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

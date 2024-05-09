@@ -16,11 +16,18 @@ import { WorkComponent } from './pages/about-us/work/work.component';
 import { ComplianceComponent } from './pages/about-us/compliance/compliance.component';
 import { BoardComponent } from './pages/about-us/board/board.component';
 import { LeadershipComponent } from './pages/about-us/leadership/leadership.component';
+import { IndustryPrimersComponent } from './pages/resource-center/industry-primers/industry-primers.component';
+import { BlogComponent } from './pages/resource-center/blog/blog.component';
+import { AiLabComponent } from './pages/resource-center/ai-lab/ai-lab.component';
+import { PodcastWebinarsComponent } from './pages/resource-center/podcast-webinars/podcast-webinars.component';
+import { EventsNewsComponent } from './pages/resource-center/events-news/events-news.component';
+import { SuccessCaseStudiesComponent } from './pages/resource-center/customer-hub/success-case-studies/success-case-studies.component';
+import { TestimonialsComponent } from './pages/resource-center/customer-hub/testimonials/testimonials.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
   { path: '',  component: MainComponent}, // Default route
-  { path: 'solutions/r-and-d', component: RAndDComponent }, 
+  { path: 'solutions/r&d', component: RAndDComponent }, 
   { path: 'solutions/commercial', component: CommercialComponent },
 
   { path: 'technologies/ppm', component: PpmComponent },
@@ -38,6 +45,15 @@ const routes: Routes = [
   { path: 'about-us/compliance', component: ComplianceComponent },
   { path: 'about-us/work', component: WorkComponent },
   { path: 'about-us/contact-us', component: ContactUsComponent },
+  
+  { path: 'resource-center/industry-primers', component: IndustryPrimersComponent },
+  { path: 'resource-center/blog', component: BlogComponent },
+  { path: 'resource-center/ai-lab', component: AiLabComponent },
+  { path: 'resource-center/podcast-webinars', component: PodcastWebinarsComponent },
+  { path: 'resource-center/events&news', component: EventsNewsComponent },
+  { path: 'resource-center/customer-hub/success&case-studies', component: SuccessCaseStudiesComponent },
+  { path: 'resource-center/customer-hub/testimonials', component: TestimonialsComponent },
+  // { path: 'resource-center/', component: ContactUsComponent },
   // { path: 'contact', component: ContactComponent },
 ];
 

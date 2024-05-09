@@ -70,7 +70,7 @@
         Solution
       </button>
       <mat-menu #Solution_menu="matMenu"> 
-        <button mat-menu-item routerLink="solutions/r-and-d">R&D</button>  
+        <button mat-menu-item routerLink="solutions/r&d">R&D</button>  
         <button mat-menu-item routerLink="solutions/commercial">Commercial</button> 
       </mat-menu> 
       <!-- Solution end -->
@@ -98,21 +98,23 @@
       </mat-menu> 
       <!-- Partners end -->
 
+      <!-- Resource center start -->
       <button mat-button [matMenuTriggerFor]="Resource_menu"> 
         Resource Center
       </button>       
       <mat-menu #Resource_menu="matMenu"> 
-        <button mat-menu-item>Industry Primers</button> 
-        <button mat-menu-item>Blog</button> 
-        <button mat-menu-item>AI Lab</button>
+        <button mat-menu-item routerLink="resource-center/industry-primers">Industry Primers</button> 
+        <button mat-menu-item routerLink="resource-center/blog">Blog</button> 
+        <button mat-menu-item routerLink="resource-center/ai-lab">AI Lab</button>
         <button mat-menu-item [matMenuTriggerFor]="Customer_menu">Customer Hub</button>
         <mat-menu #Customer_menu="matMenu"> 
-          <button mat-menu-item>Success Stories/Case Studies</button> 
-          <button mat-menu-item>Testimonials</button> 
+          <button mat-menu-item routerLink="resource-center/customer-hub/success&case-studies">Success Stories/Case Studies</button> 
+          <button mat-menu-item routerLink="resource-center/customer-hub/testimonials">Testimonials</button> 
         </mat-menu> 
-        <button mat-menu-item>Podcasts, webinars and videos</button>
-        <button mat-menu-item>Events & news</button>
+        <button mat-menu-item routerLink="resource-center/podcast-webinars">Podcasts, webinars and videos</button>
+        <button mat-menu-item routerLink="resource-center/events&news">Events & news</button>
       </mat-menu> 
+      <!-- Resource center end -->
 
       <!-- About us start -->
       <button mat-button [matMenuTriggerFor]="About_menu"> 
@@ -126,7 +128,6 @@
         <button mat-menu-item routerLink="about-us/work">Work @i2e</button> 
         <button mat-menu-item routerLink="about-us/contact-us">Contact us</button> 
       </mat-menu> 
-      <!-- About us start -->      
-   
+      <!-- About us start -->     
   </div>
 </div>
