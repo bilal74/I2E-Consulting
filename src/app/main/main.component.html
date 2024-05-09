@@ -1,8 +1,33 @@
-<!-- <p>main works!</p> -->
 <div class="container">
-    <div class="chat-icon-container">
-      <div class="btn btn-primary chat-icon">
-        <i class="fas fa-comment-dots custom-icon-size" id="chatIcon"></i>
+  <div class="chat-icon-container">
+    <div class="btn btn-primary chat-icon" (click)="toggleChat()">
+      <i class="fas fa-comment-dots custom-icon-size" id="chatIcon"></i>
+    </div>
+  </div>
+</div>
+
+<div id="chatContainer" class="chat-container" [style.height]="chatHeight">
+  <div class="chat-header">
+    <h4>Chat Assistance</h4>
+    <button class="close-btn icons-button" (click)="closeChat()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chat-body">
+    <div *ngFor="let message of messages" class="message-container" [ngClass]="{'message-left': message.from === 'user', 'message-right': message.from === 'bot'}">
+      <div class="message" [ngClass]="{'message-sent': message.from === 'user', 'message-received': message.from === 'bot'}">
+        {{ message.text }}
       </div>
     </div>
+
+  </div>
+  <div class="chat-footer">
+    <div class="input-group">
+      <input id="convert_text" type="text" class="form-control rounded-pill" placeholder="Type your query" [(ngModel)]="message">
+      <!-- <div class="input-group-prepend">
+        <button id="voiceButton" class="icons-button" style="color:grey; border: 0px; background-color: transparent;" type="button" (click)="toggleVoice()"><i class="fas fa-microphone"></i></button>
+      </div> -->
+      <div class="input-group-append">
+        <button id="sendButton" class="btn btn-primary rounded-pill" type="button" (click)="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
 </div>

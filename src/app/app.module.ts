@@ -14,6 +14,7 @@ import { OurStoryComponent } from './pages/about-us/our-story/our-story.componen
 import { RAndDComponent } from './pages/solutions/r-and-d/r-and-d.component';
 import { CommercialComponent } from './pages/solutions/commercial/commercial.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatMenuModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
