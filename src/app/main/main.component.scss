@@ -223,7 +223,7 @@ input#convert_text {
 
 	.message-container {
 		display: flex;
-		justify-content: flex-start;
+		// justify-content: flex-start;
 		margin-bottom: 10px;
 
 		.message {
@@ -288,3 +288,18 @@ button.icons-button:focus {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.message-container.message-right {
+	justify-content: flex-end; 
+  }
+  
+  .message-container.message-right .message {
+	background-color: #e5e5ea;
+	color: black;
+	align-self: flex-end;
+  }
+  
+  
+  .message-container {
+	margin-bottom: 10px;
+  }
