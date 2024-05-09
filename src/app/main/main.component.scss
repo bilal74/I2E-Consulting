@@ -27,3 +27,264 @@ $background-color_2: #006DC9;
 .custom-icon-size {
 	font-size: 24px;
 }
+input#convert_text {
+    margin-right: 8px;
+}
+.chat-container {
+	position: fixed;
+	bottom: 20px;
+	right: 20px; 
+	width: 100%; 
+	max-width: 500px; 
+	height: 0; 
+	background-color: #fdfdfd;
+	box-shadow: -4px 0px 8px rgb(0 0 0 / 5%);
+	transition: height 0.3s ease-in-out; 
+	border-radius: 10px;
+	overflow: hidden;
+  }
+  
+  .chat-header {
+	   background-color: #79AAFF;
+	  color: #001226;
+	  padding: 10px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  border-top-left-radius: 10px;
+	  border-top-right-radius: 10px;
+  }
+  
+  .chat-header h4 {
+	margin: 0;
+  }
+  
+  .close-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+  }
+  
+  .chat-body {
+	height: calc(100% - 120px);
+	overflow-y: auto;
+	padding: 10px;
+	  background-color: #FAFAFC;
+  }
+  
+  .chat-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+		 background-color: #fdfdfd;
+	  border-top: 0.5px solid #ebebeb;
+  }
+  input.form-control.rounded-pill {
+	  
+	  background-color: #E8E8EE;
+	  border-color: #E8E8EE;
+  }
+  
+  button.icons-button {
+	  background-color: transparent;
+	  width: 40px;
+		  height: 38px;
+  }
+  
+  .input-group {
+	display: flex;
+	align-items: center;
+  }
+  .icons-button {
+	margin-right: 10px; 
+  }
+  
+  button.icons-button:focus {
+	outline: 1px dotted transparent; 
+  }
+  *,*:after,*:before{
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  -ms-box-sizing: border-box;
+	  box-sizing: border-box;
+  }
+  
+  .message-container {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+  }
+  
+  .message {
+	max-width: 70%;
+	padding: 10px;
+	border-radius: 10px;
+  }
+  
+  .message-sent {
+	background-color: #007bff;
+	color: white;
+	align-self: flex-start;
+  }
+  
+  .message-received {
+	background-color: #e5e5ea;
+	color: black;
+	align-self: flex-end;
+  }
+  
+  /* Additional styles for chat body */
+  .chat-body {
+	height: calc(100% - 120px);
+	overflow-y: auto;
+	padding: 10px;
+	background-color: #FAFAFC;
+  }
+
+  $color_1: white;
+$background-color_1: #007bff;
+$background-color_2: #006DC9;
+
+.chat-icon-container {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.chat-icon {
+	width: 56px;
+	height: 56px;
+	background-color: $background-color_1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+	&:hover {
+		background-color: $background-color_2;
+	}
+
+	i {
+		color: $color_1;
+		cursor: pointer;
+	}
+}
+
+.custom-icon-size {
+	font-size: 24px;
+}
+
+input#convert_text {
+	margin-right: 8px;
+}
+
+.chat-container {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 100%;
+	max-width: 500px;
+	height: 0;
+	background-color: #fdfdfd;
+	box-shadow: -4px 0px 8px rgb(0 0 0 / 5%);
+	transition: height 0.3s ease-in-out;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.chat-header {
+	background-color: #79AAFF;
+	color: #001226;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.chat-header h4 {
+	margin: 0;
+}
+
+.close-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.chat-body {
+	height: calc(100% - 120px);
+	overflow-y: auto;
+	padding: 10px;
+	background-color: #FAFAFC;
+
+	.message-container {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+
+		.message {
+			max-width: 70%;
+			padding: 10px;
+			border-radius: 10px;
+			word-wrap: break-word; // Break long words
+		}
+
+		.message-sent {
+			background-color: #007bff;
+			color: white;
+			align-self: flex-start;
+		}
+
+		.message-received {
+			background-color: #e5e5ea;
+			color: black;
+			align-self: flex-end;
+		}
+	}
+}
+
+.chat-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: #fdfdfd;
+	border-top: 0.5px solid #ebebeb;
+}
+
+input.form-control.rounded-pill {
+	background-color: #E8E8EE;
+	border-color: #E8E8EE;
+}
+
+button.icons-button {
+	background-color: transparent;
+	width: 40px;
+	height: 38px;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+}
+
+.icons-button {
+	margin-right: 10px;
+}
+
+button.icons-button:focus {
+	outline: 1px dotted transparent;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
