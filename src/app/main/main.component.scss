@@ -1,0 +1,29 @@
+$color_1: white;
+$background-color_1: #007bff;
+$background-color_2: #006DC9;
+
+.chat-icon-container {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.chat-icon {
+	width: 56px;
+	height: 56px;
+	background-color: $background-color_1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	&:hover {
+		background-color: $background-color_2;
+	}
+	i {
+		color: $color_1;
+		cursor: pointer;
+	}
+}
+.custom-icon-size {
+	font-size: 24px;
+}
