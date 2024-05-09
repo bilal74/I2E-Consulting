@@ -20,6 +20,12 @@ import { AiMlComponent } from './pages/technologies/ai-ml/ai-ml.component';
 import { CloudComponent } from './pages/technologies/cloud/cloud.component';
 import { BigDataComponent } from './pages/technologies/big-data/big-data.component';
 import { DataEngineeringComponent } from './pages/technologies/data-engineering/data-engineering.component';
+import { PartnersComponent } from './pages/partners/partners/partners.component';
+import { PartnerWithUsComponent } from './pages/partners/partner-with-us/partner-with-us.component';
+import { LeadershipComponent } from './pages/about-us/leadership/leadership.component';
+import { ComplianceComponent } from './pages/about-us/compliance/compliance.component';
+import { WorkComponent } from './pages/about-us/work/work.component';
+import { ContactUsComponent } from './pages/about-us/contact-us/contact-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +39,13 @@ import { DataEngineeringComponent } from './pages/technologies/data-engineering/
     AiMlComponent,
     CloudComponent,
     BigDataComponent,
-    DataEngineeringComponent
+    DataEngineeringComponent,
+    PartnersComponent,
+    PartnerWithUsComponent,
+    LeadershipComponent,
+    ComplianceComponent,
+    WorkComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

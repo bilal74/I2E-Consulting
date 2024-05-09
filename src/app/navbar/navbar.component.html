@@ -87,19 +87,20 @@
         <button mat-menu-item routerLink="technologies/data-engineering">Data engineering </button> 
       </mat-menu> 
       <!-- Technologies end -->
-     
+
+      <!-- Partners start -->
       <button mat-button [matMenuTriggerFor]="Partners_menu"> 
         Partners
-      </button> 
-      
+      </button>     
       <mat-menu #Partners_menu="matMenu"> 
-        <button mat-menu-item>Partners</button> 
-        <button mat-menu-item>Why partner with us?</button> 
+        <button mat-menu-item routerLink="partners">Partners</button> 
+        <button mat-menu-item routerLink="partner-with-us">Why partner with us?</button> 
       </mat-menu> 
+      <!-- Partners end -->
+
       <button mat-button [matMenuTriggerFor]="Resource_menu"> 
         Resource Center
-      </button> 
-      
+      </button>       
       <mat-menu #Resource_menu="matMenu"> 
         <button mat-menu-item>Industry Primers</button> 
         <button mat-menu-item>Blog</button> 
@@ -113,18 +114,19 @@
         <button mat-menu-item>Events & news</button>
       </mat-menu> 
 
+      <!-- About us start -->
       <button mat-button [matMenuTriggerFor]="About_menu"> 
         About Us
       </button> 
-      
       <mat-menu #About_menu="matMenu"> 
-        <button mat-menu-item>Our story</button> 
-        <button mat-menu-item>Leadership</button> 
-        <button mat-menu-item>Board</button> 
-        <button mat-menu-item>Compliance</button> 
-        <button mat-menu-item>Work @i2e</button> 
-        <button mat-menu-item>Contact us</button> 
+        <button mat-menu-item routerLink="about-us/our-story">Our story</button> 
+        <button mat-menu-item routerLink="about-us/leadership">Leadership</button> 
+        <button mat-menu-item routerLink="about-us/board">Board</button> 
+        <button mat-menu-item routerLink="about-us/compliance">Compliance</button> 
+        <button mat-menu-item routerLink="about-us/work">Work @i2e</button> 
+        <button mat-menu-item routerLink="about-us/contact-us">Contact us</button> 
       </mat-menu> 
+      <!-- About us start -->      
    
   </div>
 </div>
