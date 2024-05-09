@@ -15,6 +15,11 @@ import { RAndDComponent } from './pages/solutions/r-and-d/r-and-d.component';
 import { CommercialComponent } from './pages/solutions/commercial/commercial.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { PpmComponent } from './pages/technologies/ppm/ppm.component';
+import { AiMlComponent } from './pages/technologies/ai-ml/ai-ml.component';
+import { CloudComponent } from './pages/technologies/cloud/cloud.component';
+import { BigDataComponent } from './pages/technologies/big-data/big-data.component';
+import { DataEngineeringComponent } from './pages/technologies/data-engineering/data-engineering.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +28,12 @@ import { HttpClientModule } from '@angular/common/http';
     MainComponent,
     OurStoryComponent,
     RAndDComponent,
-    CommercialComponent
+    CommercialComponent,
+    PpmComponent,
+    AiMlComponent,
+    CloudComponent,
+    BigDataComponent,
+    DataEngineeringComponent
   ],
   imports: [
     BrowserModule,

@@ -64,25 +64,29 @@
           <button mat-menu-item>Pipeline Product Forecast</button>
         </mat-menu> 
       </mat-menu> 
+
+      <!-- Solution start -->
       <button mat-button [matMenuTriggerFor]="Solution_menu"> 
         Solution
-      </button> 
-      
+      </button>
       <mat-menu #Solution_menu="matMenu"> 
-        <button mat-menu-item>R&D</button> 
+        <button mat-menu-item routerLink="solutions/r-and-d">R&D</button>  
         <button mat-menu-item routerLink="solutions/commercial">Commercial</button> 
       </mat-menu> 
+      <!-- Solution end -->
+
+      <!-- Technologies start -->
       <button mat-button [matMenuTriggerFor]="Technologies_menu"> 
         Technologies
       </button> 
-      
       <mat-menu #Technologies_menu="matMenu"> 
-        <button mat-menu-item>PPM</button> 
-        <button mat-menu-item>AI/ML</button> 
-        <button mat-menu-item>Cloud</button> 
-        <button mat-menu-item>Big Data </button> 
-        <button mat-menu-item>Data engineering </button> 
+        <button mat-menu-item routerLink="technologies/ppm">PPM</button> 
+        <button mat-menu-item routerLink="technologies/ai-ml">AI/ML</button> 
+        <button mat-menu-item routerLink="technologies/cloud">Cloud</button> 
+        <button mat-menu-item routerLink="technologies/big-data">Big Data </button> 
+        <button mat-menu-item routerLink="technologies/data-engineering">Data engineering </button> 
       </mat-menu> 
+      <!-- Technologies end -->
      
       <button mat-button [matMenuTriggerFor]="Partners_menu"> 
         Partners
